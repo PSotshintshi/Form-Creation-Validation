@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', fetchUserData){
 }
 try{
     const response = await fetch(apiUrl);
-    const users = await([`response.jason()`]);
+    const users = await response.jason();
        // Clear any existing content before displaying new data
         dataContainer.innerHTML = '';
           // Create a <ul> element
@@ -26,3 +26,4 @@ catch(error){
 }
 
 }
+document.addEventListener('DOMContentLoaded', fetchUserData);
